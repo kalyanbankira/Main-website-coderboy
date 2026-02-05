@@ -1,0 +1,193 @@
+/* ==== Reset & Base ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("new03.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #333;
+  animation: borderGlow 1s ease infinite;
+  opacity: 0.8;
+}
+
+/* ==== Login Container ==== */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease;
+}
+
+/* ==== Glowing Border Effect ==== */
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 18px;
+  background: linear-gradient(270deg, #00c3ff, #ff00c8, #2afadf, #845ec2);
+  background-size: 600% 600%;
+  background-image: url("new03.jpg");
+  animation: borderGlow 8s ease infinite;
+  filter: blur(6px);
+  opacity: 0.7;
+}
+
+/* ==== Avatar ==== */
+.avatar {
+  width: 70%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  transition: transform 0.2s ease;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ==== Form Elements ==== */
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #ffdede;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #cc8fff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-form input::placeholder {
+  color: #ccc;
+}
+
+.login-form input:focus {
+  border-color: #00ffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* ==== Show Password Checkbox ==== */
+.show-password {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #e0f7ff;
+  gap: 8px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.show-password input[type="checkbox"] {
+  transform: scale(1.1);
+  accent-color: #00ffff;
+}
+
+/* ==== Forgot & Sign Up Links ==== */
+.forget-sign {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.forget,
+.sign-in {
+  color: #aadfff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forget:hover,
+.sign-in:hover {
+  color: #00ffff;
+}
+
+/* ==== Login Button ==== */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #36e926, #f96400);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #45ef41, #ff8000);
+}
+
+/* ==== Animations ==== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 420px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .avatar {
+    width: 60%;
+  }
+
+  .login-form input {
+    font-size: 0.95rem;
+  }
+
+  .login-button {
+    font-size: 0.95rem;
+  }
+}

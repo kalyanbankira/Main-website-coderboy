@@ -1,0 +1,145 @@
+
+/* ==============================
+   Body Styling
+============================== */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(245, 31, 39, 1) 47%, rgba(253, 29, 29, 1) 56%, rgba(252, 176, 69, 1) 100%);
+    
+}
+
+header{
+  background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(245, 31, 39, 1) 47%, rgba(253, 29, 29, 1) 56%, rgba(252, 176, 69, 1) 100%);
+ 
+  padding: 1rem;
+}
+
+/* ==============================
+   Heading Styling
+============================== */
+.h1-header{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+/* ==============================
+   Profile Container
+============================== */
+.prof{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   Individual Profile Boxes
+============================== */
+.prof div {
+  background-color:rgb(214, 186, 25);
+  border: 4px solid rgb(248, 252, 248);
+  border-radius: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+#pro1{
+  background-image: url(agri9.jpg);
+  background-size: cover;
+}
+#pro2{
+  background-image: url(agri5.jpg);
+  background-size: cover;
+}
+#pro3{
+  background-image: url(agri12.jpg);
+  background-size: cover;
+}
+#pro4{
+  background-image: url(agri13.jpg);
+  background-size: cover;
+}
+#pro5{
+  background-image: url(agri14.jpg);
+  background-size: cover;
+}
+
+
+.prof div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px green;
+}
+
+main {
+  margin-bottom: 2rem; /* Adjust value as needed */
+}
+.main-bottom{
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* ===== Footer Section ===== */
+footer {
+  background-color: #041730;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .social-links a img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+footer .facebook { background-color: #1877f2; }
+footer .instagram { background-color: #e4405f; }
+footer .twitter { background-color: #1da1f2; }
+footer .linkedin { background-color: #0077b5; }
+footer .youtube { background-color: #ff0000; }
+
+footer .social-links a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+footer p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}

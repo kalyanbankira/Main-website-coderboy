@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header1 {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  text-align: center;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.header1 h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Main Container */
+.div_main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Registration Form Card */
+.form-section {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1d3557;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border: 1px solid #457b9d;
+  outline: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+}
+
+footer .social-links a img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+footer .facebook { background-color: #1877f2; }
+footer .instagram { background-color: #e4405f; }
+footer .twitter { background-color: #1da1f2; }
+footer .linkedin { background-color: #0077b5; }
+footer .youtube { background-color: #ff0000; }
+
+footer .social-links a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .form-section {
+    padding: 1.5rem;
+  }
+
+  .header1 h1 {
+    font-size: 1.4rem;
+  }
+}

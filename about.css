@@ -1,0 +1,136 @@
+
+/* ==============================
+   Body Styling
+============================== */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #dce35b, #45b649);
+}
+
+/* ==============================
+   Header Section
+============================== */
+.head1 {
+    
+    color: #ffffff;
+    background:  linear-gradient(to left,  #fd1d1d,#833ab4, #fcb045); 
+    text-align: center;
+    padding: 0.001rem;
+    font-size: 1.rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Optional second heading section */
+.header2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0046FF;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ==============================
+   Profile Section
+============================== */
+.profile {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(to top, #136a8a, #267871); 
+    border-radius: 12px;
+}
+
+.profile p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-weight: 700 ;
+    color: #ECFFE6;
+    line-height: 1.7;
+}
+
+/* ==============================
+   Section Titles
+============================== */
+.about {
+    
+    color: #ffffff;
+    background:  linear-gradient(to right,  #833ab4,#fd1d1d, #fcb045); 
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sumh2 {
+    color: #19183B;
+    background: linear-gradient(to right, #16a085, #f4d03f);
+    display: flexbox;
+    text-align: center;
+    border-radius:90px;
+}
+
+
+/* ==============================
+   Main Section
+============================== */
+main {
+    margin-bottom: 2rem;
+}
+
+/* ===== Footer Section ===== */
+footer {
+    background-color: #041730;
+    padding: 1rem 1rem;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  footer .social-links a img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  }
+  
+  footer .facebook { background-color: #1877f2; }
+  footer .instagram { background-color: #e4405f; }
+  footer .twitter { background-color: #1da1f2; }
+  footer .linkedin { background-color: #0077b5; }
+  footer .youtube { background-color: #ff0000; }
+  
+  footer .social-links a:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  
+  footer p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  
